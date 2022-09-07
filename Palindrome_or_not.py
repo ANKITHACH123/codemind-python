@@ -1,9 +1,6 @@
 s=input().lower()
 k=s[::-1]
-for i in s:
-    if(k==s):
-        print("True")
-        break
+if(k==s):
+    print("True")
 else:
     print("False")
-        

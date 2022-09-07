@@ -1,8 +1,5 @@
-s=input()
-a=[]
-f=[]
-for i in s.split():
-    a.append(i)
-for i in a:
-    f.append(len(i))
-print(*f)
+s=input().split()
+c=0
+for i in s:
+    c=len(i)
+    print(c,end=" ")    

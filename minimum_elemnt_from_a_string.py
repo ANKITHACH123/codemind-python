@@ -1,7 +1,7 @@
-s=input().split()
-a=s[len(s)-1]
-k=min(a)
-if k and k.lower() in a:
-    print(k.lower())
+k=input().split()
+s=k[len(k)-1]
+p=min(s)
+if p and p.lower() in s:
+    print(p.lower())
 else:
-    print(k)
+    print(p)

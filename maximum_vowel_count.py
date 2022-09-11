@@ -1,9 +1,10 @@
-l=list(map(str,input().split()))
-d=[]
-for i in l:
-    count=0
-    for j in i:
-        if j in "AEIOUaeiou":
-            count=count+1
-    d.append(count)
-print(max(d))
+s=input().split()
+v="aeiou"
+c=[]
+for i in s:
+    d=0
+    for j in range(len(i)):
+        if i[j] in v:
+           d+=1
+    c.append(d) 
+print(max(c))        

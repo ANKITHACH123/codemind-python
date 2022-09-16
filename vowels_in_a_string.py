@@ -1,8 +1,8 @@
 s=input()
 k=input()
 for i in range(len(s)):
-    if(s[i]==k):
-        print('True')
+    if k in s[i]:
+        print("True")
         print(i)
         break
 else:

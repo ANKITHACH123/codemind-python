@@ -1,7 +1,10 @@
-n=input()
-p=list(n)
+s=input().lower()
+b=[]
 c=0
-for i in p:
-    if  i in 'abcdefghijklmnopqrstuvwxyz' and p.count(i)==1:
+for i in s:
+    if s.count(i)==1 and i!=' ':
         c+=1
-print(c)
+if(c==0):
+    print("0")
+else:
+    print(c)

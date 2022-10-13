@@ -1,12 +1,15 @@
 n=int(input())
-l=list(map(int,input().split()))
-if(l[n-1]!=l[n-2]+l[n-3]):
+f=list(map(int,input().split()))
+c=0
+y=0
+for i in range(len(f)-2):
+    if(f[i]+f[i+1]==f[i+2]):
+        y=1
+        c+=1
+    else:
+        y=0
+        break
+if(y==0):
     print("no")
 else:
-    for i in range(n-2):
-        if(l[i]+l[i+1]!=l[i+2]):
-            print("no")
-            break
-    else:
-        print("yes")
-        
+    print("yes")

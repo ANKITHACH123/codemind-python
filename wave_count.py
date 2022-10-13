@@ -1,12 +1,15 @@
 n=int(input())
-l=list(map(int,input().split()))
+a=list(map(int,input().split()))
+y=0
 c=0
-for i in range(1,n-1,2):
-    if(l[i-1]<l[i] and l[i]>l[i-1]):
+for i in range(0,n-2,2):
+    if (a[i]<a[i+1]) and (a[i+1]>a[i+2]):
+        y=1
         c+=1
-    else:
-        print("-1")
-        c=0
+    elif a[i]>a[i+1]:
+        y=0
         break
-if(c!=0):
+if y==0:
+    print("-1")
+else:
     print(c)
